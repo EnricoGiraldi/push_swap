@@ -6,7 +6,7 @@
 #    By: engirald <engirald@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/10 20:13:14 by engirald          #+#    #+#              #
-#    Updated: 2023/08/10 20:24:47 by engirald         ###   ########.fr        #
+#    Updated: 2023/08/11 16:17:29 by engirald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,9 +25,9 @@ SRCS_TREAT	=./sources/treat/treat_argv.c ./sources/treat/treat_list.c
 SRCS_MOVS	= ./sources/movements/swap.c ./sources/movements/push.c ./sources/movements/reverse.c \
 				./sources/movements/rotate.c
 
-SRCS_RADIX  = radix.c radix_aux.c
+SRCS_RADIX  = radix.c radix_utils.c
 
-SRCS_SORT	= sort.c sort_aux.c
+SRCS_SORT	= sort.c sort_utils.c
 
 SRCS		= main.c $(SRCS_TREAT) $(SRCS_MOVS) $(addprefix $(SORT_PATH)/, $(SRCS_SORT))\
 				$(addprefix $(RADIX_PATH)/, $(SRCS_RADIX))
