@@ -6,16 +6,14 @@
 /*   By: engirald <engirald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:11:59 by engirald          #+#    #+#             */
-/*   Updated: 2023/08/10 20:12:00 by engirald         ###   ########.fr       */
+/*   Updated: 2023/08/14 16:00:59 by engirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-//rotates the stack that its selected
 static void	rotate(t_my_list **stack);
 
-//rotates the a stack
 void	ra(t_my_list **stack)
 {
 	rotate(stack);
@@ -23,7 +21,6 @@ void	ra(t_my_list **stack)
 	write(FD, "\n", 1);
 }
 
-//rotates the b stack
 void	rb(t_my_list **stack)
 {
 	rotate(stack);
@@ -31,7 +28,6 @@ void	rb(t_my_list **stack)
 	write(FD, "\n", 1);
 }
 
-//rotates boths stacks at the same time
 void	rr(t_my_list **stacka, t_my_list **stackb)
 {
 	rotate(stacka);

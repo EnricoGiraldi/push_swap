@@ -6,7 +6,7 @@
 /*   By: engirald <engirald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:12:37 by engirald          #+#    #+#             */
-/*   Updated: 2023/08/10 20:12:38 by engirald         ###   ########.fr       */
+/*   Updated: 2023/08/14 15:58:22 by engirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 static void	init_split(t_my_list **stacka, t_my_list **stackb, int half);
 
-//sort a stack of three numbers
 void	sort_three(t_my_list **stacka)
 {
 	if (found_big(*stacka) == 0)
@@ -42,7 +41,6 @@ void	sort_three(t_my_list **stacka)
 	}
 }
 
-//sort a stack of four numbers
 void	sort_four(t_my_list **stacka, t_my_list **stackb)
 {
 	if (found_lil(*stacka) == 2)
@@ -58,7 +56,6 @@ void	sort_four(t_my_list **stacka, t_my_list **stackb)
 	pa(stacka, stackb);
 }
 
-//sort a stack of five numbers
 void	sort_five(t_my_list **stacka, t_my_list **stackb)
 {
 	if (my_lstsize(*stacka) == 3)
@@ -112,7 +109,6 @@ void	sort_leq_dec(t_my_list **stacka, t_my_list **stackb)
 	}
 }
 
-//splits the a stack into b stack sorted
 static void	init_split(t_my_list **stacka, t_my_list **stackb, int half)
 {
 	int	little;

@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_aux.c                                         :+:      :+:    :+:   */
+/*   sort_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: engirald <engirald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:12:31 by engirald          #+#    #+#             */
-/*   Updated: 2023/08/10 20:12:32 by engirald         ###   ########.fr       */
+/*   Updated: 2023/08/14 15:59:03 by engirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-//return the position of the biggest number of the stack
 static	int	return_pos_big(int pos, t_my_list *aux, t_my_list *stack)
 {
 	t_my_list	*list_aux;
@@ -39,7 +38,6 @@ static	int	return_pos_big(int pos, t_my_list *aux, t_my_list *stack)
 	return (pos);
 }
 
-//return the position of the littlest number of the stack
 static	int	return_pos_lil(int pos, t_my_list *aux, t_my_list *stack)
 {
 	t_my_list	*list_aux;

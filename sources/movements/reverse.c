@@ -6,18 +6,16 @@
 /*   By: engirald <engirald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:11:52 by engirald          #+#    #+#             */
-/*   Updated: 2023/08/10 20:11:53 by engirald         ###   ########.fr       */
+/*   Updated: 2023/08/14 16:00:43 by engirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-//takes the last number of the stack at puts it on top
 static void	reverse(t_my_list **stack);
-//deletes the last number which is now the first one
+
 static void	remove_bottom(t_my_list **stack);
 
-//reverse the a stack
 void	rra(t_my_list **stack)
 {
 	reverse(stack);
@@ -26,7 +24,6 @@ void	rra(t_my_list **stack)
 	write(FD, "\n", 1);
 }
 
-//reverse the b stack
 void	rrb(t_my_list **stack)
 {
 	reverse(stack);
@@ -35,7 +32,6 @@ void	rrb(t_my_list **stack)
 	write(FD, "\n", 1);
 }
 
-//reverse both stack at the same time
 void	rrr(t_my_list **stacka, t_my_list **stackb)
 {
 	reverse(stacka);

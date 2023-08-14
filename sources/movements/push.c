@@ -6,21 +6,18 @@
 /*   By: engirald <engirald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 20:11:45 by engirald          #+#    #+#             */
-/*   Updated: 2023/08/11 16:02:06 by engirald         ###   ########.fr       */
+/*   Updated: 2023/08/14 16:00:13 by engirald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-//if the destination stack has at least one
-//number this function appends it at the top of stack
 static void	not_empty(t_my_list **src, t_my_list **dest);
-//removes the value of the stack if after the push it is going to be empty
+
 static void	remove_to_empty(t_my_list **stack);
-//removes the first value that is moved to the other stack
+
 static void	remove_top(t_my_list **stack);
 
-//push from stack A to stack B the first number
 void	pa(t_my_list **stacka, t_my_list **stackb)
 {
 	int	first_b;
@@ -44,7 +41,6 @@ void	pa(t_my_list **stacka, t_my_list **stackb)
 	write(FD, "\n", 1);
 }
 
-//push from stack B to stack A the first number
 void	pb(t_my_list **stacka, t_my_list **stackb)
 {
 	int	first_a;
